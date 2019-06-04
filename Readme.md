@@ -53,3 +53,39 @@ listen_addresses='*'
 to your postgresql.conf file
 
 service postgresql restart
+
+
+# CREacion de una clave SSH.
+ls -la // verificamos si existe la carpeta .ssh o sino se crea con mkdir
+entramos al directorio .ssh 
+ls 
+
+ssh-keygen -t rsa -C ristian.puma.es6@gmail.com
+contraseña
+:..::
+.:.
+..::
+Y te genera 2 archivos 1.pub
+
+/////////////////
+FATAL: no pg_hba.conf entry for host "200.1.181.183", user "cpuma", database "cpuma", SSL on
+
+
+Tenemso que entrar en modo sudo
+dentro de postgres/version/main/ ls
+sudo nano pg_hba.conf
+//-------al ultimo 
+agregar
+host    all     all   miip/32       trust
+        /db     //user  //ladireccion
+
+sudo nano postgresql.conf
+
+habiklitamos el listen_addresses = '*'
+
+
+sudo nano postgresql restart
+
+
+y ya nos podemos conectar.
+https://www.youtube.com/watch?v=zujeb8VWncI
