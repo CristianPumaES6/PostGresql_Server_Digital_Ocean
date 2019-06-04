@@ -37,3 +37,19 @@ sudo -i -u sammy
 cpuma
 Peru123.
 port:"5432".
+
+# habilite el puerto
+ufw allow 5432/tcp
+
+sudo nano /etc/postgresql/9.3/main/pg_hba.conf
+
+and allow connection by all users to all databases from any IP if the user has right MD5-encrypted password by adding the following line:
+
+host all all 0.0.0.0/0 md5
+
+
+77777777777777777
+listen_addresses='*'
+to your postgresql.conf file
+
+service postgresql restart
