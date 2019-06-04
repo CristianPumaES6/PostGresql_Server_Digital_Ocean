@@ -1,0 +1,19 @@
+{
+  "name": "postgresql_server_digital_ocean",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CristianPumaES6/PostGresql_Server_Digital_Ocean.git"
+  },
+  "author": "CristianPumaES6",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CristianPumaES6/PostGresql_Server_Digital_Ocean/issues"
+  },
+  "homepage": "https://github.com/CristianPumaES6/PostGresql_Server_Digital_Ocean#readme"
+}
